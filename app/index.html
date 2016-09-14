@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html ng-app="sobold">
+
+<head>
+  <!--<base href="/">-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title set in pageTitle directive -->
+  <title page-title></title>
+
+  <!-- Google Open Sans -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- Font awesome -->
+  <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/angular-loading-bar/build/loading-bar.min.css" rel="stylesheet" />
+  <link href="bower_components/angular-datepicker/dist/angular-datepicker.min.css" rel="stylesheet" />
+  <!-- Main Inspinia CSS files -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css({.tmp,app}) styles/style.css -->
+  <link href="styles/animate.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/jquery.steps.css" rel="stylesheet" />
+  <!-- endbuild -->
+  <link href="scripts/plugin/angular-chart/angular-chart.min.css" rel="stylesheet" />
+  <!--<script src="//cdn.auth0.com/js/lock-8.2.min.js"></script>-->
+
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+
+<body ng-controller="MainCtrl as main">
+
+  <!-- Main view  -->
+  <div ui-view></div>
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- jQuery and Bootstrap -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <!-- MetsiMenu -->
+  <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+  <!-- SlimScroll -->
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peace JS -->
+  <script src="bower_components/pace/pace.min.js"></script>
+  <script src="bower_components/jquery.steps/build/jquery.steps.min.js"></script>
+  <!-- Angular scripts-->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+  <script src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
+  <script src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+  <script src="bower_components/auth0-angular/build/auth0-angular.js"></script>
+  <script src="bower_components/angular-datepicker/dist/angular-datepicker.min.js"></script>
+  <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+
+  <!-- Angular Dependiences -->
+  <!--                      -->
+  <!--                      -->
+  <!--                      -->
+  <!-- endbuild -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.3.1/alasql.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/angular.chartjs/1.0.2/angular-chart.min.js"></script>
+
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+
+
+
+  <!-- Custom and plugin javascript -->
+  <script src="scripts/inspinia.js"></script>
+
+
+
+  <!-- Anglar App Script -->
+
+  <script src="scripts/module/ajaxRequestHandler.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/config.js"></script>
+  <script src="scripts/route.js"></script>
+  <script src="scripts/run.js"></script>
+  <script src="scripts/directives.js"></script>
+  <script src="scripts/directive/pageTitle.js"></script>
+  <script src="scripts/factory/userFactory.js"></script>
+  <script src="scripts/controller/loginCtrl.js"></script>
+  <script src="scripts/controller/mainCtrl.js"></script>
+  <script src="scripts/controller/organicTrafficComparisonCtrl.js"></script>
+  <script src="scripts/controller/organicTrafficShareCtrl.js"></script>
+  <script src="scripts/controller/organicTrafficIndexCtrl.js"></script>
+  <script src="scripts/controller/twitterCtrl.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<style>
+    body{
+        background: white;
+    }
+    </style>
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
+            <h1 class="logo-name"><img class="logo" src="img/SOBold_logo.png"/></h1>
+        </div>
+        <h3 class="welcome">Welcome to the SoBold Client Dashboard</h3>
+        <p class="tagMessage">Please enter your provided username and password to gain access </p>
+         <form class="m-t" role="form" action="#">
+            <div class="form-group"> 
+                <input type="email" class="form-control" placeholder="Username" required="">
+            </div>
+            <div class="form-group mb50">
+                <input type="password" class="form-control" placeholder="Password" required="">
+            </div>
+           
+            <a ui-sref="forgot_password"><small>Forgot password?</small></a>
+            <p class="text-muted text-center"><small>Support</small></p>
+            
+        </form>
+    </div>
+</div>
+  <div ng-include="'views/common/footer.html'"></div>

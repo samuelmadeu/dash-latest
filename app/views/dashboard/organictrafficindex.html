@@ -1,0 +1,68 @@
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins chart-box">
+                <div class="ibox-title">
+                    <h5>Average Keywork Position</h5>
+                    <span class="label label-success pull-right">Updated: {{trafficindex.todaydate | date: 'dd.MM.yyyy'}}</span>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <canvas id="traffickeyword" width="660" height="285" class="chart  chart-line" 
+                            chart-options="trafficindex.trafficKeywordOptions" 
+                            chart-type="trafficindex.trafficKeywordChartType"
+                             chart-data="trafficindex.trafficKeywordData" chart-labels="trafficindex.trafficKeywordLabels" 
+                             chart-dataset-override="trafficindex.trafficKeywordDatasetOverride" 
+                             chart-series="trafficindex.trafficKeywordSeries"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins chart-box">
+                <div class="ibox-title">
+                    <h5>Best Keyword Position</h5>
+                    <span class="label label-success pull-right">Updated: {{trafficindex.todaydate | date: 'dd.MM.yyyy'}}</span>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <canvas id="trafficposition" width="660" height="285" class="chart chart-doughnut"
+                             chart-options="trafficindex.trafficPositionOptions" chart-type="trafficindex.trafficPositionChartType"
+                             chart-series="trafficindex.trafficPositionSeries" 
+                             chart-data=" trafficindex.trafficPositionData"
+                              chart-labels="trafficindex.trafficPositionLabels"
+                                chart-colors="trafficindex.trafficPositionColors"
+                                 chart-dataset-override="trafficindex.trafficPositionDatasetOverride">
+                                 </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins chart-box">
+                <div class="ibox-title">
+                    <h5>Traffic Index</h5>
+                    <span class="label label-success pull-right">Updated: {{trafficindex.todaydate | date: 'dd.MM.yyyy'}}</span>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <canvas id="traffic" width="660" height="285" class="chart chart-line"
+                             chart-options="trafficindex.trafficIndexOptions" chart-type="trafficindex.trafficIndexChartType"
+                             chart-series="trafficindex.trafficIndexSeries" 
+                             chart-data=" trafficindex.trafficIndexData"
+                              chart-labels="trafficindex.trafficIndexLabels"
+                                chart-colors="trafficindex.trafficIndexColors"
+                                 chart-dataset-override="trafficindex.trafficIndexDatasetOverride"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

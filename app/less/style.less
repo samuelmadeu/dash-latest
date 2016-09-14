@@ -1,0 +1,232 @@
+/*
+ *
+ *   INSPINIA - Responsive Admin Theme
+ *   version 2.4
+ *
+*/
+
+// Google Fonts
+//@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+// Variables, Mixins
+@import "variables.less";
+@import "mixins.less";
+// INSPINIA Theme Elements
+@import "typography.less";
+@import "navigation.less";
+@import "top_navigation.less";
+@import "buttons.less";
+@import "badgets_labels.less";
+@import "elements.less";
+@import "sidebar.less";
+@import "base.less";
+@import "pages.less";
+@import "chat.less";
+@import "metismenu.less";
+@import "spinners.less";
+// Landing page styles
+@import "landing.less";
+// RTL Support
+@import "rtl.less";
+// For demo only - config box style
+@import "theme-config.less";
+// INSPINIA Skins
+@import "skins.less";
+@import "md-skin.less";
+// Media query style
+@import "media.less";
+// Custom style
+// Your custom style to override base style
+@import "custom.less";
+// Clear layout on print mode
+@media print {
+    nav.navbar-static-side {
+        display: none;
+    }
+    #page-wrapper {
+        margin: 0;
+    }
+}
+
+
+/*Custom CSS*/
+
+#page-wrapper {
+    background-color: #EEF4F9;
+}
+
+.count-info .label {
+    line-height: 12px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 17px;
+    right: auto;
+    top: 12px;
+}
+
+.minimalize-styl-2 {
+    padding: 4px 0px;
+    margin: 14px 5px 5px 20px;
+    float: left;
+    font-size: 17px;
+    color: black;
+}
+
+.navbar-static-top {
+    background-color: #f3f3f4;
+}
+
+.page-heading,
+.breadcrumb {
+    background-color: #f9f9f9;
+}
+
+.chart-box {
+    height: 400px !important;
+    width: 700px !important;
+    text-align: center;
+    margin: auto;
+}
+
+.chart-box .ibox-title,
+.dashboard-number .ibox-title,
+.chart-box-small .ibox-title {
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 4px;
+    top: -7px;
+    position: relative;
+    z-index: 100;
+}
+
+.chart-box .ibox-content,
+.dashboard-number .ibox-content,
+.chart-box-small .ibox-content {
+    background-color: #fff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+    top: -14px;
+    position: relative;
+}
+
+.chart-box-small {
+    // height: 400px !important;
+    // width: 350px !important;
+    text-align: center;
+    margin: auto;
+}
+
+.footer {
+    background: none;
+    border-top: none;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+}
+
+.profile-element {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile-element .logo{
+    width: auto;
+       height: 30px;
+}
+.profile-element .logo-span{
+    padding: 13px;
+    background: white;
+    border-radius: 50%;
+    display: inline;
+}
+
+.profile-element .logo-title{
+   margin-top: 15px;
+}
+
+body {
+    background: #02192A;
+    font-family: 'pt-sans';
+}
+
+@font-face {
+    font-family: 'pt-sans';
+    src: url(/fonts/PTS55F.ttf);
+}
+
+.nav-header {
+    background: none;
+}
+
+.nav>li.active {
+    background: #02192A;
+}
+
+.nav-second-level li a {
+    padding-left: 44px;
+}
+
+.main-menu {
+    border: none !important;
+}
+
+.nav.nav-second-level>li.active {
+    border-left: 4px solid #19aa8d;
+}
+
+.heading {
+    padding: 4px 0px;
+    margin: 14px 5px 5px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.loginscreen {
+    color: #2D3B6E;
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.loginscreen .logo {
+    height: 100px;
+    width: auto;
+}
+
+.loginscreen .welcome {
+    color: #2D3B6E;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.loginscreen .tagMessage {
+    color: #2D3B6E;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.loginscreen input {
+    width: 300px;
+    margin: auto;
+    background: #e5e6e7;
+}
+
+.loginscreen input:active {
+    border: 1px solid #19aa8d;
+}
+
+.loginscreen p,
+.loginscreen a {
+    color: #2D3B6E;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
